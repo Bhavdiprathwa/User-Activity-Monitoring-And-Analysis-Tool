@@ -1,53 +1,110 @@
-# 🕵️‍♂️ Advance Keylogger in Python
+# 🛡️ User Activity Monitoring & Analysis Tool
 
-A Python-based advanced keylogger that records keystrokes, captures screenshots, logs system information, records microphone audio, and securely emails the logs.
+A Python-based user activity monitoring and analysis tool designed for cybersecurity learning, digital investigation research, and security awareness. The project demonstrates how user activity data can be collected, logged, and analyzed in a controlled and authorized environment.
+
+---
 
 ## 📌 Features
 
-- Records all keystrokes with timestamps
-- Takes periodic screenshots of the screen
-- Logs system information (IP, platform, etc.)
-- Records microphone audio
-- Sends logs via email automatically
-- Stores logs locally in encrypted format (optional)
+✅ Records keyboard activity with timestamps
 
-## 🛠 Technologies Used
+✅ Captures periodic screenshots for activity monitoring
 
-- **Python**  
-- `pynput` – For keystroke logging  
-- `PIL` – For screenshot capture  
-- `sounddevice` & `scipy.io.wavfile` – For audio recording  
-- `smtplib` & `email` – For sending emails  
-- `getpass`, `platform`, `requests` – For system information
+✅ Collects system information (IP address, hostname, OS details, username)
+
+✅ Records microphone audio samples
+
+✅ Automatically sends activity reports via email
+
+✅ Maintains activity logs for security analysis
+
+✅ Demonstrates monitoring and logging techniques used in cybersecurity investigations
+
+---
+
+## 🛠️ Technologies Used
+
+### Programming Language
+
+* Python
+
+### Libraries & Modules
+
+* **pynput** → Keyboard activity monitoring
+* **Pillow (PIL)** → Screenshot capture
+* **sounddevice** → Audio recording
+* **scipy.io.wavfile** → Audio file processing
+* **smtplib & email** → Automated email reporting
+* **requests** → IP information retrieval
+* **platform** → Operating system information
+* **getpass** → User information collection
+* **datetime** → Timestamp generation
+
+---
 
 ## 📦 Setup Instructions
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/Bhavdiprathwa/Advance-Keylogger.git
-    cd Advance-Keylogger
-    ```
+### 1️⃣ Clone the Repository
 
-2. Install dependencies:
-    ```bash
-    pip install pynput Pillow sounddevice scipy requests
-    ```
+```bash
+git clone https://github.com/Bhavdiprathwa/User-Activity-Monitoring-And-Analysis-Tool.git
+cd User-Activity-Monitoring-And-Analysis-Tool
+```
 
-3. Configure your email in the script for sending logs:
-    - Use app password for Gmail.
-    - Enable less secure apps (or app-specific password) if using Gmail.
+### 2️⃣ Install Dependencies
 
-4. Run the script:
-    ```bash
-    python keylogger.py
-    ```
+```bash
+pip install pynput Pillow sounddevice scipy requests
+```
+
+### 3️⃣ Configure Email Settings
+
+Update your sender email and app password inside the script.
+
+For Gmail:
+
+* Enable Two-Factor Authentication (2FA)
+* Generate an App Password
+* Use the generated App Password in the script
+
+### 4️⃣ Run the Application
+
+```bash
+python main.py
+```
+
+---
+
+## 🎯 Project Objective
+
+This project was developed to understand and demonstrate:
+
+* User activity monitoring concepts
+* Security logging mechanisms
+* Digital investigation techniques
+* Data collection and reporting workflows
+* Python automation in cybersecurity
+
+---
 
 ## ⚠️ Disclaimer
 
-This project is intended for **educational purposes only**. Unauthorized use of keyloggers is illegal and unethical.
+This project is intended strictly for educational, research, and authorized security testing purposes only.
 
-## 📫 Contact
+The author does not encourage or support unauthorized monitoring of systems, devices, or individuals. Users are solely responsible for ensuring compliance with applicable laws, regulations, and organizational policies.
 
-For queries or collaborations:  
-📧 bhavdiprathwa728@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/bhavdip-rathwa/)
+---
+
+## 👨‍💻 Author
+
+**Bhavdip Rathwa**
+
+📧 Email: [bhavdiprathwa728@gmail.com](mailto:bhavdiprathwa728@gmail.com)
+
+🔗 GitHub: https://github.com/Bhavdiprathwa
+
+🔗 LinkedIn: Add Your LinkedIn Profile
+
+---
+
+⭐ If you found this project useful, consider giving it a star.
